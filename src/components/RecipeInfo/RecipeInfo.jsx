@@ -7,7 +7,7 @@ export const RecipeInfo = ({imageUrl, name, time, servings, calories, difficulty
             <img src={imageUrl} width='400' alt={name} />
             <h2>{name}</h2>
             <p><b>Cooking time: </b>{time} minutes</p>
-            <p><b>Serving for: </b>{servings}{servings > 1 ? 'people' : 'person'}</p>
+            <p><b>Serving for: </b>{servings} {servings > 1 ? 'people' : 'person'}</p>
             <p><b>Calories: </b>{calories}kcal</p>
             <p><b>Cooking difficulty: </b>{difficulty}stars from 3</p>
 
