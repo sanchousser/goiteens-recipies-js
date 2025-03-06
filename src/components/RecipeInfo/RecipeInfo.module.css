@@ -1,0 +1,27 @@
+.recipe__item {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 300px;
+}
+
+.recipe__item p {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.recipe__icon {
+    margin-right: 5px;
+}
+
+.recipe__img {
+    width: 300px;
+    height: auto;
+    border: 0px solid;
+    border-radius: 10px;
+}
+
+.recipe__title {
+    font-size: 22px;
+}
