@@ -1,10 +1,19 @@
 import PropTypes from "prop-types"
+import styled from 'styled-components';
 import { RecipeInfo } from "../RecipeInfo/RecipeInfo"
-import css from './Recipe.module.css'
+
+const List = styled.ul`
+     display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+`
+
 
 export const Recipe = ({ recipe }) => {
   return (
-    <ul className={css.recipe__list}>
+    <List>
       {recipe.map(({ image, name, time, servings, calories, difficulty}, index) => {
         return <RecipeInfo
           key={index}
@@ -16,7 +25,7 @@ export const Recipe = ({ recipe }) => {
           difficulty={difficulty}
         />
       })}
-    </ul>
+    </List>
   );
 };
 Recipe.propTypes = {
