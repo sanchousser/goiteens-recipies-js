@@ -40,10 +40,12 @@ const DifficultyList = styled.ul`
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5px;
-    height: 35px;
-    border-radius: 15px;
+    gap: 10px;
+    height: 40px;
+    background-color: black;
+    border-radius: 7px;
     padding-inline-start: 0px;
+    
 
 `
 
@@ -53,11 +55,14 @@ const Difficulty = styled.span`
     border-radius: 7px;
     color: black;
     font-weight: bold;
+    min-width: 65px;
+    text-align: center;
 `
 
 const RecipeDifficulty = styled(Difficulty)`
     background-color: #9F2B68;
     color: white;
+    border: 1.5px solid;
 `
 
 
